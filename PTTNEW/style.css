@@ -1,0 +1,230 @@
+body {
+    font-family: 'db_helvethaicaais_x55_regular';
+    font-size  : 16px;
+}
+
+.header-img {
+    background-image   : url("assets/images/header.png");
+    background-position: center;
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    width              : 100%;
+    height             : 330px;
+}
+
+.ptt_news {
+    background-color: #f6f6f6;
+    padding         : 0;
+}
+
+.ptt_news .title p {
+    font-size: 2em;
+    color    : #fff;
+    margin   : 0;
+}
+
+.ptt_news .title {
+    background-color: #0067b4;
+    text-align      : center;
+    padding         : 15px;
+    width           : 100%;
+    font-size       : 1.3em;
+}
+
+.box-panel {
+    width        : 100%;
+    height       : 430px;
+    margin       : 0 auto;
+    box-shadow   : 2px 2px 5px #000;
+    margin-top   : 10px;
+    margin-bottom: 10px;
+}
+
+.box-panel .box-blue {
+    margin: 0 auto;
+    width : 90%;
+}
+
+.ptt_news .box-page {
+    float       : right;
+    margin-right: 50px;
+    margin-top  : 15px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin : 0;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color           : #000;
+    float           : left;
+    padding         : 8px 16px;
+    text-decoration : none;
+    transition      : background-color 0.3s;
+    border          : 1px solid #ddd;
+    margin          : 0 5px;
+    background-color: #fff;
+}
+
+ul.pagination li a.active {
+    background-color: #05a8db;
+    color           : #fff;
+    border          : 1px solid #05a8db;
+}
+
+ul.pagination li a:hover:not(.active) {
+    color           : #fff;
+    background-color: #05a8db;
+}
+
+.boxin {
+    padding   : 0;
+    overflow-y: auto;
+    height    : 350px;
+    color     : #0067b4;
+    margin-top: 10px;
+}
+/* Let's get this party started */
+.boxin::-webkit-scrollbar {
+    width: 12px;
+}
+/* Track */
+.boxin::-webkit-scrollbar-track {
+    -webkit-box-shadow   : inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius        : 10px;
+    background           : rgba(0,153,210,1);
+}
+/* Handle */
+.boxin::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius        : 10px;
+    background           : rgba(255,255,255,1);
+    -webkit-box-shadow   : inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.boxin hr {
+    margin: 10px 0;
+}
+
+.boxin h2 {
+    font-size: 2.2em;
+}
+
+.boxin h3 {
+    font-size  : 2em;
+    line-height: 20px;
+    margin     : 0;
+    text-indent: 20px;
+}
+
+.boxin h4 {
+    font-size: 1.5em;
+}
+
+.boxin input,
+.boxin label,
+.boxin table,
+.boxin textarea {
+    font-size: 1.6em;
+}
+
+.boxin table input {
+    font-size: 1em;
+}
+
+.box-page .btn_save,
+.btn_save:active {
+    background-color: #7bc942;
+    width           : 120px;
+    box-shadow      : 0 2px 2px #000;
+    font-size       : 1.5em;
+    margin-left     : 15px;
+    line-height     : 20px;
+    border-radius   : 15px;
+    color           : #fff;
+    outline         : none;
+    text-shadow     : 1px 1px 2px #000;
+    margin-top      : -35px;
+}
+
+.radio-box {
+    margin-left: 40px;
+    height     : 40px;
+    cursor     : pointer;
+}
+
+.radio-box label {
+    font-weight: normal;
+}
+
+.other {
+    background: transparent;
+    box-shadow: 0 0 0;
+    border    : 0;
+    outline   : none;
+    color     : #6f6f6f;
+}
+
+.box-15 h3 {
+    text-align : center;
+    line-height: normal;
+    text-indent: 0;
+    font-size  : 1.5em;
+}
+
+.boxsuccess h1 {
+    font-size: 3em;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .header-img {
+        height: 200px;
+    }
+
+    .box-page .first,
+    .box-page .last {
+        display: none;
+    }
+
+    ul.pagination li a {
+        padding: 5px 12px;
+    }
+
+    .box-panel {
+        height: auto;
+    }
+
+    .ptt_news .box-page {
+        float       : none;
+        margin-right: 0;
+    }
+
+    .box-page .btn_save,
+    .btn_save:active {
+        margin-top   : 0;
+        margin-bottom: 10px;
+        width        : 90%;
+    }
+
+    ul.pagination {
+        margin-left: 25px;
+    }
+
+    .ptt_news .title p {
+        font-size: 1.7em;
+    }
+
+    .boxsuccess h1 {
+        font-size: 2em;
+    }
+}

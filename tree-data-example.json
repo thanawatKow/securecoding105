@@ -1,0 +1,61 @@
+[{
+    text:'<font size=3>1.Common String Manipulation Errors</font>',
+    expanded: true,
+    children:[
+    {
+        text:'<font size=2.5>Unbounded String Copies</font>',
+        id:'Unbounded_String_Copies',
+        leaf:true
+    }
+    ]
+},{
+    text:'<font size=3>2.String Vulnerabilities</font>',
+    children:[
+    {
+        text:'<font size=2.5>Mitigation Strategies</font>',
+        id:'SV-Mitigation-Strategies',
+        leaf:true
+    }
+    ]
+},
+{
+    text:'<font size=3>3.Pointer Subterfuge</font>',
+    children:[
+    {
+        text:'<font size=2.5>Mitigation Strategies</font>',
+        id:'PS-Mitigation-Strategies',
+        leaf:true
+    }
+    ]
+},
+{
+    text:'<font size=3>4.Integer Vulnerabilities</font>',
+    children:[
+    {
+        text:'<font size=2.5>Mitigation Strategies</font>',
+        id:'IV-Mitigation-Strategies',
+        leaf:true
+    }
+    ]
+},
+{
+    text:'<font size=3>5.Formatted Output Vulnerabilities</font>',
+    children:[
+    {
+        text:'<font size=2.5>Mitigation Strategies</font>',
+        id:'FOV-Mitigation-Strategies',
+        leaf:true
+    }
+    ]
+},
+{
+    text:'<font size=3>6.File I/O Vulnerabilities</font>',
+    children:[
+    {
+        text:'<font size=2.5>Mitigation Strategies</font>',
+        id:'FIV-Mitigation-Strategies',
+        leaf:true
+    }
+    ]
+}
+]

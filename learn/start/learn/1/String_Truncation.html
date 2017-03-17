@@ -1,0 +1,68 @@
+ <html>
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" type="text/css" href="../../../../work/resources/css/ext-all.css" />
+
+    <!-- overrides to base library -->
+    <link rel="stylesheet" type="text/css" href="../../../../work/examples/ux/css/CenterLayout.css" />
+
+    <!-- page specific -->
+    <link rel="stylesheet" type="text/css" href="../../../../layout-browser.css">
+   <!-- ExtJS library: base/adapter -->
+    <script type="text/javascript" src="../../../../work/adapter/ext/ext-base.js"></script>
+
+    <!-- ExtJS library: all widgets -->
+    <script type="text/javascript" src="../../../../work/ext-all.js"></script>
+
+    <!-- overrides to base library -->
+
+    <!-- extensions -->
+    <script type="text/javascript" src="../../../../work/examples/ux/CenterLayout.js"></script>
+    <script type="text/javascript" src="../../../../work/examples/ux/RowLayout.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/font.css">
+ </head>
+ <script text="text/javascript">
+  Ext.onReady(function(){
+new Ext.Panel({
+	renderTo: Ext.getBody(),
+	title: '<img src="../../../../images/sword-backgroud.png" width="25" height="25" alt=""/><font size ="3">String Truncation</font>',
+	height: 1024,
+	width: 1339,
+	cls: 'my-panel-class',
+	layout: 'fit',
+items: new Ext.BoxComponent({
+	el: 'main-content'
+})
+});
+  });
+ </script>
+ <div id="main-content">
+<html>
+<meta charset="utf-8"> 
+</html>
+<table width="100%" border="0" colspan="0">
+  <tr>
+    <td height="19" colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    
+    <td width="1044" height="33" colspan="2"><p> </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;เกิดขึ้นเมื่อ ทำการตัด String เเล้ว แถวอักขระ ปลายทาง มีขนาดไม่ใหญ่ พอที่จะบรรจุ เนื้อหาของ string  การตัด String Truncation อาจเกิดขึ้น ในขณะที่อ่านค่าเข้ามาของผู้ใช้ หรือ การคัดลอก string  ได้และมักจะเป็นผลมาจาก โปรแกรมเมอร์ พยายามที่จะป้องกัน หน่วยความจำที่เกิดจากการล้นซึ่งจำเป็นต้องตัด  string  ซึ่งทำให้เกิดการสูญเสียของข้อมูลและ ในบางกรณี สามารถนำไปสู่ ช่องโหว่ของซอฟต์แวร์ได้ String Errors without Functions มีหลาย ฟังก์ชันด้วยกัน ยกตัวอย่างเช่น strcpy(), strcat(), gets(), streadd(), strecpy(), และ strtrns() มันเป็น ไปได้ที่จะ ทำการดำเนินการกับ string ที่ไม่ปลอดภัย ได้โดยไม่ต้อง เรียก ฟังก์ชันซึ่่งแสดงให้เห็นใน ตัวอย่างของ โปรแกรม C ที่มี ข้อบกพร่อง ที่เกิดจากการ ดำเนินการคัดลอก string แต่ไม่ได้มีการเรียกใช้ฟังก์ชันไลบรารี่ของ string ใด ๆ ดังแสดงในรูปต่อไปนี้้</td>
+    <td width="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="img" align="center"><img src="../../../../images/learn/String/1.png" width="454" height="248"  alt=""/></div>
+    <div id="content-img1" align="center">รูป2.1 Defective string manipulation code</div></td>
+    <td height="149">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td colspan="2"></td>
+   
+      <td width="4"></td>
+  </tr>
+</table>
+
+
+</div>
+ </html>

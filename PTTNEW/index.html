@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>แบบสอบถาม PTT News</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <link href="assets/fonts/helvethaicaais/stylesheet.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
+    </head>
+    <body>
+        <div class="container-fluid ptt_news">
+            <div class="header-img">
+                <!-- <img src="assets/images/header.png" alt=""/> -->
+            </div>
+            <div class="title">
+                <p>
+                    แบบสำรวจความคิดเห็นแฟนเพจ PTT News</p>
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <form id="testingform" class="box-panel" method="post" action="testing.php">
+                    <div class="box-blue">
+                        <div class="col-md-12 boxin">
+                            <div class="box-1 hidebox">
+                                <h2>1.ข้อมูลทั่วไป</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <h3>1.1 เพศ</h3>
+                                    <div class="radio-box">
+                                        <input id="radio1" type="radio" name="sex" value="ชาย" required="required">
+                                        <label for="radio1">
+                                            <p>ชาย</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="radio2" type="radio" name="sex" value="หญิง">
+                                        <label for="radio2">
+                                            <p>หญิง</p>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="radio3" type="radio" name="sex" value="อื่นๆ">
+                                        <label for="radio3">
+                                            <p>อื่นๆ</p>
+                                        </label>
+                                    </div>
+                                    <label for="sex" class="error" style="display:none;" ></label>
+                                    <hr/>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>1.2 อายุ</h3>
+                                    <div class="radio-box">
+                                        <input id="ageradio1" type="radio" name="age" value="ต่ำกว่า 20 ปี">
+                                        <label for="ageradio1">
+                                            <p>ต่ำกว่า 20 ปี</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="ageradio2" type="radio" name="age" value="21-30 ปี">
+                                        <label for="ageradio2">
+                                            <p>21-30 ปี</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="ageradio3" type="radio" name="age" value="31 – 40 ปี">
+                                        <label for="ageradio3">
+                                            <p>31 – 40 ปี</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="ageradio4" type="radio" name="age" value="40 ปีขึ้นไป">
+                                        <label for="ageradio4">
+                                            <p>40 ปีขึ้นไป</p>
+                                        </label>
+                                    </div>
+                                      <label for="age" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>1.3 การศึกษา</h3>
+                                    <div class="radio-box">
+                                        <input id="educationradio1" type="radio" name="education" value="ต่ำกว่ามัธยมศึกษา">
+                                        <label for="educationradio1">
+                                            <p>ต่ำกว่ามัธยมศึกษา</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="educationradio2" type="radio" name="education" value="มัธยมศึกษาหรือเทียบเท่า">
+                                        <label for="educationradio2">
+                                            <p>มัธยมศึกษาหรือเทียบเท่า</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="educationradio3" type="radio" name="education" value="ปวช./ปวส./อนุปริญญา">
+                                        <label for="educationradio3">
+                                            <p>ปวช./ปวส./อนุปริญญา</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="educationradio4" type="radio" name="education" value="ปริญญาตรี">
+                                        <label for="educationradio4">
+                                            <p>ปริญญาตรี</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="educationradio5" type="radio" name="education" value="ปริญญาโท">
+                                        <label for="educationradio5">
+                                            <p>ปริญญาโท</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="educationradio6" type="radio" name="education" value="ปริญญาเอก">
+                                        <label for="educationradio6">
+                                            <p>ปริญญาเอก</p>
+                                        </label>
+                                    </div>
+                                        <label for="education" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                                <div class="col-md-12">
+                                    <h3>1.4 อาชีพ</h3>
+                                    <div class="radio-box">
+                                        <input id="careerradio1" type="radio" name="career" value="นักเรียน / นักศึกษา">
+                                        <label for="careerradio1">
+                                            <p>นักเรียน / นักศึกษา</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="careerradio2" type="radio" name="career" value="ข้าราชการ / พนักงานรัฐวิสาหกิ">
+                                        <label for="careerradio2">
+                                            <p>ข้าราชการ / พนักงานรัฐวิสาหกิจ</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="careerradio3" type="radio" name="career" value="พนักงานบริษัทเอกชน">
+                                        <label for="careerradio3">
+                                            <p>พนักงานบริษัทเอกชน</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="careerradio4" type="radio" name="career" value="ธุรกิจส่วนตัว">
+                                        <label for="careerradio4">
+                                            <p>ธุรกิจส่วนตัว</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="careerradio5" type="radio" name="career" value="อาชีพอิสระ">
+                                        <label for="careerradio5">
+                                            <p>อาชีพอิสระ</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="careerradio6" type="radio" name="career" value="อื่นๆ โปรดระบุ">
+                                        <label for="careerradio6">
+                                            <p>อื่นๆ โปรดระบุ</p>
+                                        </label>
+                                        <input class="other" type="text" name="career_other" value="" placeholder=".................................">
+                                    </div>
+                                     <label for="career" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <div class="box-2 hidebox">
+                                <h2>2. ความถี่ในการเข้าใช้งานระบบ Facebook</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="radio-box">
+                                        <input id="usefbradio1" type="radio" name="useFacebook" value="ทุกวัน" >
+                                        <label for="usefbradio1">
+                                            <p>ทุกวัน</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="usefbradio2" type="radio" name="useFacebook" value="2-3 วันต่อครั้ง">
+                                        <label for="usefbradio2">
+                                            <p>2-3 วันต่อครั้ง</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="usefbradio3" type="radio" name="useFacebook" value="สัปดาห์ละครั้ง">
+                                        <label for="usefbradio3">
+                                            <p>สัปดาห์ละครั้ง</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="usefbradio4" type="radio" name="useFacebook" value="2 สัปดาห์ครั้ง">
+                                        <label for="usefbradio4">
+                                            <p>2 สัปดาห์ครั้ง</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="usefbradio5" type="radio" name="useFacebook" value="1 เดือนต่อครั้ง">
+                                        <label for="usefbradio5">
+                                            <p>1 เดือนต่อครั้ง</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="usefbradio6" type="radio" name="useFacebook" value="อื่นๆ โปรดระบุ">
+                                        <label for="usefbradio6">
+                                            <p>อื่นๆ โปรดระบุ</p>
+                                        </label>
+                                        <input class="other" type="text" name="useFacebook_other" value="" placeholder=".................................">
+                                    </div>
+                                       <label for="useFacebook" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <div class="box-3 hidebox">
+                                <h2>3. ช่วงเวลาที่คุณเล่น Facebook บ่อยที่สุด คือช่วงเวลาใด</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="radio-box">
+                                        <input id="timeusefbradio1" type="radio" name="timeuseFacebook" value="06.00 – 12.00 น." >
+                                        <label for="timeusefbradio1">
+                                            <p>06.00 – 12.00 น.</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timeusefbradio2" type="radio" name="timeuseFacebook" value="12.00 – 18.00 น.">
+                                        <label for="timeusefbradio2">
+                                            <p>12.00 – 18.00 น.</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timeusefbradio3" type="radio" name="timeuseFacebook" value="18.00 – 21.00 น.">
+                                        <label for="timeusefbradio3">
+                                            <p>18.00 – 21.00 น.</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timeusefbradio4" type="radio" name="timeuseFacebook" value="21.00 – 00.00 น.">
+                                        <label for="timeusefbradio4">
+                                            <p>21.00 – 00.00 น.</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timeusefbradio5" type="radio" name="timeuseFacebook" value="หลัง 00.00 น. เป็นต้นไป">
+                                        <label for="timeusefbradio5">
+                                            <p>หลัง 00.00 น. เป็นต้นไป</p>
+                                        </label>
+                                    </div>
+                                    <label for="timeuseFacebook" class="error" style="display:none;"></label>
+                                    <hr/>
+
+                                </div>
+                            </div>
+                            <div class="box-4 hidebox">
+                                <h2>4. คุณมีความสนใจในเรื่องราวแบบใดมากที่สุด (5 มากที่สุด / 1 น้อยที่สุด)</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>วิทยาศาสตร์ / เทคโนโลยี / นวัตกรรม <label for="interest1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lifestyle / การดูแลสุขภาพ <label for="interest2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest2" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ความรู้เรื่องน้ำมัน /การดูแลรักษาเครื่องยนต์ <label for="interest3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest3" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ข่าวสารเกี่ยวกับองค์กร <label for="interest4" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest4" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest4" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest4" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest4" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest4" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ความรู้ด้านพลังงาน / ประเด็นพลังงาน <label for="interest5" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest5" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest5" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest5" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest5" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest5" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ประวัติศาสตร์พลังงาน <label for="interest6" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest6" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest6" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest6" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest6" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest6" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>โปรโมชั่น / สินค้าและบริการใหม่ๆ <label for="interest7" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="interest7" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest7" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest7" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest7" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="interest7" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>อื่นๆ โปรดระบุ</td>
+                                                    <td colspan="5">
+                                                        <input class="other" type="text" name="interest_other" value="" placeholder=".................................">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-5 hidebox">
+                                <h2>5. เรื่องราวแบบใดที่คุณรู้สึกอยากนำไปบอกต่อ หรือแชร์ไปมากที่สุด (5 มากที่สุด / 1 น้อยที่สุด)</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>วิทยาศาสตร์ / เทคโนโลยี / นวัตกรรม <label for="feel1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lifestyle / การดูแลสุขภาพ <label for="feel2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel2" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ความรู้เรื่องน้ำมัน /การดูแลรักษาเครื่องยนต์ <label for="feel3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel3" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ข่าวสารเกี่ยวกับองค์กร <label for="feel4" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel4" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel4" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel4" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel4" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel4" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ความรู้ด้านพลังงาน / ประเด็นพลังงาน <label for="feel5" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel5" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel5" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel5" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel5" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel5" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ประวัติศาสตร์พลังงาน  <label for="feel6" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel6" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel6" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel6" value="3 ">
+                                                    </td>
+
+                                                    <td>
+                                                        <input type="radio" name="feel6" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel6" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>โปรโมชั่น / สินค้าและบริการใหม่ๆ  <label for="feel7" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></td>
+                                                    <td>
+                                                        <input type="radio" name="feel7" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel7" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel7" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel7" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="feel7" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>อื่นๆ โปรดระบุ</td>
+                                                    <td colspan="5">
+                                                        <input class="other" type="text" name="feel_other" value="" placeholder=".................................">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-6 hidebox">
+                                <h2>6. ในการเข้าร่วมกิจกรรมบนเพจ กิจกรรมรูปแบบใดที่คุณสนใจที่สุด (5 มากที่สุด / 1 น้อยที่สุด)</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>กิจกรรมตอบคำถามความรู้ <label for="page1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="page1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>กิจกรรมแคปภาพหน้าจอเพื่อเข้าร่วม <label for="page2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="page2" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>กิจกรรมที่ใช้ทักษะ(การเขียน,การถ่ายภาพ) <label for="page3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="page3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="page3" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>อื่นๆ โปรดระบุ</td>
+                                                    <td colspan="5">
+                                                        <input class="other" type="text" name="useFacebook3" value="" placeholder=".................................">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-7 hidebox">
+                                <h2>7. ในการเข้าร่วมกิจกรรมนอกสถานที่กับทาง ปตท. กิจกรรมแบบใดที่คุณสนใจมากที่สุด (5 มากที่สุด / 1 น้อยที่สุด)</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>กิจกรรมเยี่ยมชมกิจการขององค์กร <label for="event1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="event1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>กิจกรรมสาธารณประโยชน์ (ชุมชน หรือโรงเรียน / สิ่งแวดล้อม) <label for="event2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="event2" value="5"> 
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>กิจกรรม Workshop ประดิษฐ์สิ่งของ (DIY) <label for="event3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="event3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="event3" value="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-8 hidebox">
+                                <h2>8. ในการเข้าร่วมกิจกรรมนอกสถานที่กับทาง ปตท. คุณสะดวกเข้าร่วมกิจกรรมในพื้นที่ใด</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="radio-box">
+                                        <input id="location1" type="radio" name="location" value="สถานที่ในกรุงเทพมหานคร หรือปริมณฑล">
+                                        <label for="usefbradio5">
+                                            <p>สถานที่ในกรุงเทพมหานคร หรือปริมณฑล  </p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="location2" type="radio" name="location" value="สถานที่ที่ต้องออกต่างจังหวัดไกลๆ โปรดระบุ">
+                                        <label for="usefbradio6">
+                                            <p>สถานที่ที่ต้องออกต่างจังหวัดไกลๆ โปรดระบุ</p>
+                                        </label>
+                                        <input class="other" type="text" name="location_other" value="" placeholder=".................................">
+                                    </div>
+                                    <label for="location" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <div class="box-9 hidebox">
+                                <h2>9. ในการเข้าร่วมกิจกรรมนอกสถานที่กับทาง ปตท. ระยะเวลาที่เหมาะสมสำหรับการร่วมกิจกรรมคือเท่าใด</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="radio-box">
+                                        <input id="timelocation1" type="radio" name="timelocation" value="1 วัน" >
+                                        <label for="timelocation1">
+                                            <p>1 วัน</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timelocation2" type="radio" name="timelocation" value="2-3 วัน">
+                                        <label for="timelocation2">
+                                            <p>2-3 วัน</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="timelocation3" type="radio" name="timelocation" value="3 วันขึ้นไป">
+                                        <label for="timelocation3">
+                                            <p>3 วันขึ้นไป</p>
+                                        </label>
+                                    </div>
+                                    <label for="timelocation" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <div class="box-10 hidebox">
+                                <h2>10. ท่านมีข้อคิดเห็นอย่างไรกับนโยบายของทาง ปตท. ที่ให้สิทธิ์แก่ผู้เล่นหน้าใหม่ได้มีโอกาสเข้าร่วมกิจกรรมก่อน</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="radio-box">
+                                        <input id="suggest1" type="radio" name="suggest" value="เห็นด้วย" >
+                                        <label for="suggest1">
+                                            <p>เห็นด้วย</p>
+                                        </label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input id="suggest2" type="radio" name="suggest" value="ไม่เห็นด้วย เพราะ">
+                                        <label for="suggest2">
+                                            <p>ไม่เห็นด้วย เพราะ</p>
+                                        </label>
+                                        <input class="other" type="text" name="suggest_other" value="" placeholder=".................................">
+                                    </div>
+                                    <label for="suggest" class="error" style="display:none;"></label>
+                                    <hr/>
+                                </div>
+                            </div>
+                            <div class="box-11 hidebox">
+                                <h2>11. นักร้อง / นักแสดงคนใดที่ท่านให้ความสนใจพิเศษ (โปรดระบุ)</h2>
+                                <hr/>
+                                <div class="col-md-12"> <label for="sing" class="error" style="display:none;font-size:18px;"></label>
+                                    <textarea class="form-control" rows="7" name="sing" ></textarea>
+                                </div>
+                            </div>
+                            <div class="box-12 hidebox">
+                                <h2>12. ในการจัดกิจกรรมนอกสถานที่ของทาง ปตท. ท่านมีข้อเสนอแนะเพิ่มเติมอย่างไรบ้าง (โปรดระบุ) </h2>
+                                <hr/><label for="actity" class="error" style="display:none;font-size:18px;"></label>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" rows="6" name="actity" ></textarea>
+                                </div>
+                            </div>
+                            <div class="box-13 hidebox">
+                                <h2>13. ความพึงพอใจโดยรวมต่อเพจ PTT News (5 มากที่สุด / 1 น้อยที่สุด)</h2>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>เนื้อหา (Content)<label for="satisfact1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ภาพประกอบ<label for="satisfact2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact2" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การตอบคำถาม / ชี้แจงข้อมูล  <label for="satisfact3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact3" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การดูแลของแอดมิน <label for="satisfact4" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact4" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact4" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact4" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact4" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="satisfact4" value="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-14 hidebox">
+                                <h2>14. เมื่อเอ่ยถึง ปตท. ในเรื่องดังต่อไปนี้ ท่านมีความพึงพอใจในระดับใด</h2>
+                                <h4>(5 = พึงพอใจมาก / 4 = พึงพอใจ / 3 = ปานกลาง / 2 = พึงพอใจเล็กน้อย / 1 = ควรปรับปรุง)</h4>
+                                <hr/>
+                                <div class="col-md-12">
+                                    <div class="table-responsive table-history">
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>รายละเอียด</th>
+                                                    <th>5</th>
+                                                    <th>4</th>
+                                                    <th>3</th>
+                                                    <th>2</th>
+                                                    <th>1</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่มีบทบาทสำคัญในการขับเคลื่อนเศรษฐกิจของประเทศ <label for="ptt1" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="ptt1" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt1" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt1" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt1" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt1" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่มุ่งมั่น แสวงหาพลังงานให้คนไทยมีใช้อย่างพอเพียง  <label for="ptt2" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label>
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt2" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt2" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt2" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt2" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt2" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่ขับเคลื่อนด้วยองค์ความรู้ทางด้านวิทยาศาสตร์และเทคโนโลยี
+                                                     <label for="ptt3" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="ptt3" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt3" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt3" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt3" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt3" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่คนไทยสามารถเชื่อมั่นและไว้วางใจได้
+                                                     <label for="ptt4" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="ptt4" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt4" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt4" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt4" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt4" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่คนไทยสร้างความภาคภูมิใจให้คนไทย
+                                                     <label for="ptt5" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="ptt5" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt5" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt5" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt5" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt5" value="1">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>การเป็นองค์กรที่สร้างความยั่งยืนให้แก่สังคม ชุมชน และสิ่งแวดล้อม
+                                                     <label for="ptt6" class="error" style="display:none;font-size:18px;display:block;text-align:right;"></label></td>
+                                                    <td>
+                                                        <input type="radio" name="ptt6" value="5">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt6" value="4">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt6" value="3">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt6" value="2">
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="ptt6" value="1">
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-15 hidebox">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="name" class="col-sm-3 control-label">ชื่อ - นามสกุล</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="ชื่อ - นามสกุล">
+                                             <label for="name" class="error" style="display:none;display:block;font-size:18px;"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" style="margin:20px 0">
+                                        <h3>ที่อยู่ (คุณอาจเป็นผู้โชคดี 1 ใน 250 ที่จะได้รับของที่ระลึกจากการทำแบบสอบถามในครั้งนี้ )</h3>
+                                        
+                                    </div>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control" rows="6" id="address" name="address"></textarea> 
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-page">
+                        <ul class="sync-pagination"></ul>
+                        <button id="btn_save" type="submit" class="btn btn_save">บันทึก</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery-3.1.1.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/additional-methods.min.js"></script>
+        <script src="assets/js/jquery.validate.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.validate.js"></script>
+        <script src="assets/js/additional-methods.min.js"></script>
+        <script src="chackfrom.js"></script>
+
+        <script src="assets/js/jquery.twbsPagination.js" type="text/javascript"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+
+        <script type="text/javascript">
+           var page_check;
+           $(".hidebox").hide();
+            $('.sync-pagination').twbsPagination({
+                totalPages: 15,
+                onPageClick: function (evt, page) {
+                    $(".hidebox").hide();
+                    $(".box-" + page).show();
+                    page_check=page;
+                }
+            });
+            
+            var form = $("#testingform");
+
+            //document.getElementById("btn_save").addEventListener("click", function () {
+                
+                    if(page_check==""){
+                        page_check=1;
+                    }
+                    $(".box-1").show();
+                    $(".box-2").show();
+                    $(".box-3").show();
+                    $(".box-4").show();
+                    $(".box-5").show();
+                    $(".box-6").show();
+                    $(".box-7").show();
+                    $(".box-8").show();
+                    $(".box-9").show();
+                    $(".box-10").show();
+                    $(".box-11").show();
+                    $(".box-12").show();
+                    $(".box-13").show();
+                    $(".box-14").show();
+                    //form.submit(function( event ) {
+                        if(form.valid()==false)
+                        {   
+                            $(".hidebox").hide();
+                            $(".box-"+page_check).show();    
+                        }
+                        else if(form.valid()==true)
+                        {
+                            chk_form=true;
+                            form.submit();
+                        }
+                    //});   
+                    
+            //});
+
+        </script>
+    </body>
+</html>

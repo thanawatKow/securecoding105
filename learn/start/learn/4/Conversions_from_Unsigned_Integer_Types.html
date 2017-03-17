@@ -1,0 +1,76 @@
+ <html>
+ <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ <link rel="stylesheet" type="text/css" href="../../../../work/resources/css/ext-all.css" />
+
+    <!-- overrides to base library -->
+    <link rel="stylesheet" type="text/css" href="../../../../work/examples/ux/css/CenterLayout.css" />
+
+    <!-- page specific -->
+    <link rel="stylesheet" type="text/css" href="../../../../layout-browser.css">
+   <!-- ExtJS library: base/adapter -->
+    <script type="text/javascript" src="../../../../work/adapter/ext/ext-base.js"></script>
+
+    <!-- ExtJS library: all widgets -->
+    <script type="text/javascript" src="../../../../work/ext-all.js"></script>
+
+    <!-- overrides to base library -->
+
+    <!-- extensions -->
+    <script type="text/javascript" src="../../../../work/examples/ux/CenterLayout.js"></script>
+    <script type="text/javascript" src="../../../../work/examples/ux/RowLayout.js"></script>
+ </head>
+ <style type="text/css">
+td,th {
+	color: #314e7c;
+}
+</style>
+ <script text="text/javascript">
+  Ext.onReady(function(){
+new Ext.Panel({
+	renderTo: Ext.getBody(),
+	title: '<img src="../../../../images/sword-backgroud.png" width="30" height="25"   alt=""/><font size ="3">Unbounded String Copies</font>',
+	height: 1024,
+	width: 1339,
+	cls: 'my-panel-class',
+	layout: 'fit',
+items: new Ext.BoxComponent({
+	el: 'main-content'
+})
+});
+  });
+ </script>
+ <div id="main-content">
+<html>
+<meta charset="utf-8"> 
+</html>
+<table width="100%" border="0" colspan="0">
+  <tr>
+    <td height="21" colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="1028" height="33" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; การแปลงที่เกิดขึ้นระหว่าง signed และ unsigned integer ขนาดใดๆ และอาจส่งผลทำให้
+เกิดการสูญหายของข้อมูลหรือการปัญหาการตีความของข้อมูลเมื่อค่านั้นไม่สามารถแทนที่ด้วยค่าชนิดใหม่ได้นั้นเองการแปลงค่าของชนิด  unsigned integer ที่มีขนาดเล็ก ไปเป็น ค่าของชนิด unsigned integer  ที่มีขนาดใหญ่จะต้องมีการระมัดระวังและมักจะเกิดการขยายขนาดของค่านั้น
+	 เมื่อ unsigned integer ที่มีขนาดใหญ่ ถูกแปลงไปเป็นค่าของ unsigned integer ที่มีขนาดเล็ก ซึ่งค่าที่มีขนาดใหญ่จะถูกตัดทอนและจะมีการเก็บรักษา low-order  เอาไว้ เมื่อค่าของ unsigned integer ที่มีขนาดใหญ่ถูกแปลงไปเป็น signed integer ที่มีขนาดเล็ก ซึ่งค่านี้จะถูกตัดทอนและ high-order bit จะถูกเก็บค่าของ sign bit ไว้ ซึ่งทั้งสองกรณีนี้ข้อมูลก็อาจสูญหายไปถ้าค่านั้นไม่สามารถแทนในค่าใหม่ได้ 
+	เมื่อ unsigned integer ถูกแปลงไปเป็น ชนิดของ singed integer ( ตัวอย่าง การแปลง unsigned char ไปเป็น char )  bit pattern จะถูกเก็บรักษาเอาไว้ จากรูปจะแสดงการแปลงค่าชนิด unsigned integer โดยสีเทาแสดงถึงผลลัพธ์ที่เกิดจากการแปลงค่าทำให้เกิดข้อมูลสูญหายได้และสีเทาดำจะแสดงการแทนค่าที่ไม่ถูกต้อง</td>
+    <td width="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div id="img1" align="center"><img src="../../../../images/learn/integer/4.png" width="595" height="442"  alt=""/></div>
+    <div id="content-img1" align="center"></div></td>
+    <td height="149">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <td colspan="2"><div id="content">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+      <div id="img2" align="center"></div>
+         <div id="content-img2" align="center"></div></td>
+   
+      <td width="3"></td>
+  </tr>
+</table>
+
+</div>
+ </html>
